@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef Bayoudhi's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+
+    <!-- Header Section -->
+    <header class="bg-white dark:bg-gray-800 shadow">
+        <div class="container mx-auto flex justify-between items-center p-5">
+            <h1 class="text-3xl font-bold">Youssef Bayoudhi</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#home" class="hover:text-blue-500 dark:hover:text-blue-400">Home</a></li>
+                    <li><a href="#projects" class="hover:text-blue-500 dark:hover:text-blue-400">Projects</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 dark:hover:text-blue-400">Contact</a></li>
+                    <li><a href="#Skills" class="hover:text-blue-500 dark:hover:text-blue-400">Skills</a></li>
+                </ul>
+            </nav>
+            <button class="bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-gray-100 p-2 rounded">
+                Toggle Dark Mode
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-cover bg-center h-screen" style="background-image: url('your-image-url.jpg');">
+        <div class="container mx-auto flex justify-center items-center h-full">
+            <h2 class="text-5xl font-bold text-black text-center">Welcome to My Portfolio</h2>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="Skills" class="py-20 bg-gray-200 dark:bg-gray-800">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-10">My Skills</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">Web Development</h4>
+                    <p>Proficient in HTML, CSS, JavaScript, and frameworks like React and Vue.js.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">Backend Development</h4>
+                    <p>Experienced with Node.js, Express, and databases like MongoDB and SQL.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">UI/UX Design</h4>
+                    <p>Skilled in creating user-friendly interfaces with tools like Figma and Adobe XD.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">DevOps</h4>
+                    <p>Knowledgeable in CI/CD pipelines, Docker, and cloud services like AWS and Azure.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">Mobile Development</h4>
+                    <p>Experienced in building mobile applications using React Native and Flutter.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">Data Analysis</h4>
+                    <p>Proficient in data analysis and visualization using Python, R, and tools like Tableau.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-10">My Projects</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">Project 1</h4>
+                    <p>Details about project 1.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">Project 2</h4>
+                    <p>Details about project 2.</p>
+                </div>
+                <div class="bg-white dark:bg-gray-700 p-5 shadow-lg rounded">
+                    <h4 class="text-2xl font-bold mb-3">Project 3</h4>
+                    <p>Details about project 3.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gray-200 dark:bg-gray-800">
+        <div class="container mx-auto">
+            <h3 class="text-4xl font-bold text-center mb-10">Contact Me</h3>
+            <form class="max-w-lg mx-auto bg-white dark:bg-gray-700 p-8 shadow-lg rounded">
+                <div class="mb-5">
+                    <label for="name" class="block text-lg font-medium mb-2">Name</label>
+                    <input type="text" id="name" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded" required>
+                </div>
+                <div class="mb-5">
+                    <label for="email" class="block text-lg font-medium mb-2">Email</label>
+                    <input type="email" id="email" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded" required>
+                </div>
+                <div class="mb-5">
+                    <label for="message" class="block text-lg font-medium mb-2">Message</label>
+                    <textarea id="message" class="w-full p-3 border border-gray-300 dark:border-gray-600 rounded" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 dark:bg-blue-600 text-white p-3 rounded">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white dark:bg-gray-800 py-5">
+        <div class="container mx-auto flex justify-between items-center">
+            <p>&copy; 2024 Youssef Bayoudhi. All rights reserved.</p>
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-blue-500 dark:hover:text-blue-400">Twitter</a>
+                <a href="#" class="hover:text-blue-500 dark:hover:text-blue-400">LinkedIn</a>
+                <a href="#" class="hover:text-blue-500 dark:hover:text-blue-400">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
